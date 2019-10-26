@@ -17,18 +17,22 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+//Typography Styles
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
+//Background Gradient
 .navbar, .home-callout {
    background-color: rgb(46,46,46);
 }
 
+// Navigation Bar Styles
 .navbar {
     border: none;
 }
 
+// Homepage Styles
 .home-callout {
     color: white;
     margin-top: -20px;
@@ -36,20 +40,12 @@ h1, h2, h3 {
     padding-bottom: 100px;
 }
 
-.navbar-default .navbar-nav li a {
+// Navigation Bar text and opacity level
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-brand {
     color: white;
-}
-
-.navbar-default .navbar-nav li a:hover {
-    color: white;
-    opacity: 0.75;
-}
-
-.navbar-default .navbar-brand{
-    color: white;
-}
-
-.navbar-default .navbar-brand:hover{
-    color: white;
-    opacity: 0.75;
+    &:hover {
+        color: white;
+        opacity: 0.75;
+    }
 }
