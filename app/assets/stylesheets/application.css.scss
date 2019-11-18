@@ -59,6 +59,11 @@ h1, h2, h3 {
     padding-bottom: 100px;
 }
 
+// Clears up obstructing flash message when signing in or logging out
+ .alert-notice {
+     display: none;
+ }
+
 // Navigation Bar text and opacity level
 .navbar-default .navbar-nav li a,
 .navbar-default .navbar-brand {
