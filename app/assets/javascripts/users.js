@@ -3,8 +3,10 @@
 $(document).on('turbolinks:load', function(){
     var theForm = $('#pro_form');
     var submitBtn = $('#form-signup-btn');
+    
     //Set Stripe publi.c key.
     Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
+    
     //When user clicks form submit btn.
     submitBtn.click(function(event){
         //prevent default submission behavior.
@@ -54,15 +56,16 @@ $(document).on('turbolinks:load', function(){
         return false;
     });
     
-    //Stripe will return a card token.    
+    //Stripe will return a card token.
     function stripeResponseHandler(status, response) {
-        //Get the token from the response
-        var token = response.id;
-        
-        //Inject the card token in a hiddden field.
-        theForm.append( $('<input type-"hidden" name="user[stripe_card_token">').val(token) );
-        
-        //Submit form to our Rails app
-        theForm.get(0).submit();
-    }
+    
+    //Get the token from the response.
+    var token = response.id;
+    
+    //Inject the card token in a hidden field.
+    theForm.append( $('<input type="hidden" name="user[stripe_card_token]">').val(token) );
+    
+    //Submit form to our Rails app.
+    theForm.get(0).submit();
+  }
 });
