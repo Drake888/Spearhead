@@ -86,3 +86,23 @@ h1, h2, h3 {
 .home-signup-links {
     margin-top: 30px;
 }
+
+// Header for Profile Creation page
+.profilecreationheader_p {
+    margin-bottom: 18px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+// Sub-text for Profile Creation page
+.profilecreationsub_p {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+}
