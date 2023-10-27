@@ -6,6 +6,7 @@ This is a complete end-to-end project composed of HTML, CSS, JavaScript/jQuery, 
 
 Heroku Link:
 https://guarded-waters-00583.herokuapp.com
+(Currently down as Heroku recently changed and needs to be synced again)
 
 Payment is processed via Stripe. Please use a test card: https://stripe.com/docs/testing
 
